@@ -28,25 +28,30 @@
       </div>
 
       <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-        <div class="w-full text-center">
-            @if (session()->has('appId'))
-              <span class="inline-flex items-center gap-x-1.5 rounded-full bg-green-100 px-1.5 py-0.5 text-xs font-medium text-green-700">
-                <svg class="h-1.5 w-1.5 fill-green-500" viewBox="0 0 6 6" aria-hidden="true">
-                  <circle cx="3" cy="3" r="3" />
-                </svg>
-                {{ 'App ID: ' . session('appId') }}
-              </span>
-            @endif
-            @if (session()->has('errorMessage'))
-              <span class="inline-flex items-center gap-x-1.5 rounded-full bg-red-100 px-1.5 py-0.5 text-xs font-medium text-red-700">
-                <svg class="h-1.5 w-1.5 fill-red-500" viewBox="0 0 6 6" aria-hidden="true">
-                  <circle cx="3" cy="3" r="3" />
-                </svg>
-                {{ 'Error: ' . session('errorMessage') }}
-              </span>
-            @endif
-        </div>
-        <form class="space-y-6" action="{{ route('verifyAppCheckToken') }}" method="POST">
+        @if (session()->has('appId'))
+          <div class="rounded-md bg-green-50 p-4">
+            <div class="flex">
+              <div class="flex-shrink-0">
+                <CheckCircleIcon class="h-5 w-5 text-green-400" aria-hidden="true" />
+              </div>
+              <div class="ml-3">
+                <p class="text-sm font-medium text-green-800">{{ 'App ID: ' . session('appId') }}</p>
+              </div>
+            </div>
+          </div>
+        @elseif (session()->has('errorMessage'))
+          <div class="rounded-md bg-red-50 p-4">
+            <div class="flex">
+              <div class="flex-shrink-0">
+                <XCircleIcon class="h-5 w-5 text-red-400" aria-hidden="true" />
+              </div>
+              <div class="ml-3">
+                <p class="text-sm font-medium text-red-800">{{ session('errorMessage') }}</p>
+              </div>
+            </div>
+          </div>
+        @endif
+        <form class="mt-4 space-y-6" action="{{ route('verifyAppCheckToken') }}" method="POST">
           {{-- @csrf --}}
           <div>
             <label for="app_check_token" class="block text-sm font-medium leading-6 text-gray-900">App Check Token</label>

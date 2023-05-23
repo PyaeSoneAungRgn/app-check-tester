@@ -49,7 +49,8 @@
               </div>
             </div>
           </div>
-        @elseif (session()->has('errorMessage'))
+        @endif
+        @if (session()->has('errorMessage'))
           <div class="rounded-md bg-red-50 p-4">
             <div class="flex">
               <div class="flex-shrink-0">

@@ -52,7 +52,7 @@
           </div>
         @endif
         <form class="mt-4 space-y-6" action="{{ route('verifyAppCheckToken') }}" method="POST">
-          {{-- @csrf --}}
+          @csrf
           <div>
             <label for="app_check_token" class="block text-sm font-medium leading-6 text-gray-900">App Check Token</label>
             <div class="mt-2">

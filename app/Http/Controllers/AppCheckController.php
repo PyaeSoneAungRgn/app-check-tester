@@ -23,10 +23,8 @@ class AppCheckController extends Controller
                 ->createAppCheck()
                 ->verifyToken($request->validated('app_check_token'));
             $appId = $token->appId;
-            info($appId);
         } catch (Exception $exception) {
             $errorMessage = $exception->getMessage();
-            info($errorMessage);
         }
         return back()
             ->withInput()

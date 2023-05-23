@@ -6,8 +6,8 @@
     },
     "routes": [
         {
-            "src": "/(css|js|png)/(.*)",
-            "dest": "public/$1/$2"
+            "src": "/banner.png",
+            "dest": "public/banner.png"
         },
         {
             "src": "/(.*)",

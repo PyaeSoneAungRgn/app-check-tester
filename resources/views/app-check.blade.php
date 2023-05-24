@@ -33,11 +33,11 @@
   </head>
   <body style="font-family: 'Poppins', sans-serif;" class="h-full">
     <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
-      <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+      <div class="sm:mx-auto sm:w-full sm:max-w-sm md:max-w-md">
         <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Firebase App Check Tester</h2>
       </div>
 
-      <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
+      <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm md:max-w-md">
         @if (session()->has('appId'))
           <div class="rounded-md bg-green-50 p-4">
             <div class="flex">

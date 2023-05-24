@@ -15,13 +15,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Firebase App Check Tester</title>
-    <meta name="description" content="Online tool for testing Firebase App Check Token"/>
+    <meta name="description" content="Online tool for testing Firebase App Check"/>
 
     <meta property="og:title" content="Firebase App Check Tester"/>
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://appcheck.vercel.app/"/>
     <meta property="og:image" content="https://appcheck.vercel.app/banner.png"/>
-    <meta property="og:description" content="Online tool for testing Firebase App Check Token" />
+    <meta property="og:description" content="Online tool for testing Firebase App Check" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

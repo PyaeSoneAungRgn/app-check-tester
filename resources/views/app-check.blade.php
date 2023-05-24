@@ -88,7 +88,7 @@
 
           <div>
             <button type="submit" class="flex w-full justify-center rounded-md bg-amber-500 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-amber-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-500">Verify Token</button>
-            <p class="mt-1 text-xs leading-6 text-gray-500">We do not store Service Account JSON.</p>
+            <p class="mt-1 text-xs leading-6 text-gray-600">We do not store Service Account JSON. <a class="text-blue-600" href="https://github.com/PyaeSoneAungRgn/appcheck#local-developement">Read more</a></p>
           </div>
         </form>
 
